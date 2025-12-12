@@ -1,60 +1,83 @@
-body {
-    background-color:lightgrey ;
+body { 
+    background-color:lightgray ;
 }
 
 .cabecalho {
     padding: 10px;
-    background-color: brown;
-}
+    background-color: lightslategrey;
+} 
 
-.cabecalho .logo {
+ .cabecalho .logo {
     display: inline-block;
+    color: lightgoldenrodyellow;
+    transition: 0.3s ease-in-out;
+} 
+
+.cabecalho .logo:hover{
+    background-color:lightseagreen;
+    padding: 7px;
+    
 }
 
-.cabecalho nav {
+ .cabecalho .naveg {
     float: right;
-}
+} 
 
-.cabecalho nav li {
+.cabecalho .naveg .menu li {
     display: inline-block;
     padding: 10px;
-}
+    margin: 0 5px;
+} 
 
-.cabecalho nav li a {
+ .cabecalho .naveg .menu a {
     font-size: 18px;
-    color: white;
-}
+    color: lightgoldenrodyellow;
+    transition: 0.3s ease-in-out;
+}  
 
-main {
-    background-color: white;
-    padding: 30px;
-    margin: 0 auto;
-    max-width: 900px;
-    min-width: 320px;
-}
+.cabecalho .naveg .menu a:hover{
+    background-color: lightseagreen;
+    padding: 12px;
+    color: #111;
+    font-weight: 400;
+} 
 
-main .info {
+.conteudo-principal {
+   background-color: #fff;
+   padding: 30px;
+   max-width: 900px;
+   min-width: 320px;
+   margin: 0 auto;
+} 
+
+ .conteudo-principal .info {
     font-size: 16px;
+} 
+
+.conteudo-principal .painel .info .titulo{
+    margin-bottom: 10px;
 }
 
-main p {
-    font-size: 16px;
-}
+ .conteudo-principal .painel .info .texto {
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 10px;
+} 
 
-.image img {
-    width: 100%;
-}
-
-@media (max-width: 576px) {
+ @media (max-width: 576px) {
     .cabecalho {
         text-align: center;
     }
 
-    .cabecalho nav {
+    .cabecalho .naveg {
         float: none;
     }
 
-    .cabecalho nav li {
+    .cabecalho .naveg .menu li {
         display: block;
     }
-}
+
+    .conteudo-principal{
+        text-align: center;
+    }
+} 

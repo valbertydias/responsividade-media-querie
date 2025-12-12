@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Responsividade, media e queries </title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
 </head>
-<body>
-  <header class="cabecalho">
-    <h1 class="logo">Logo</h1>
-    <nav>
-      <ul>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#onde-estamos">Onde Estamos</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
+<body>
+    <header class="cabecalho">
+      <a href="#">
+      <h1 class="logo">Logo</h1>
+      </a>
+
+      <nav class="naveg">
+        <ul class="menu">
+          <li><a href="#quem somos">Quem Somos</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main class="conteudo-principal">
     <section class="painel">
       <div class="info">
-        <h1>Batman</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga suscipit voluptate commodi non possimus? Maxime inventore, consequuntur veritatis incidunt itaque sed necessitatibus. Quibusdam enim, dolor perferendis quam hic laboriosam dolorem!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequatur, omnis deserunt culpa, eum quisquam enim atque laudantium temporibus distinctio cumque alias quia doloremque accusamus veniam optio, error eos cupiditate.</p>
+        <h2 class="titulo">Um Filme do Batman</h2>
+        <p class="texto">A morte de seus pais em um beco o marca profundamente, gerando um ódio pelo crime.
+          Bruce dedica sua vida a se tornar uma arma, treinando artes marciais, ciências, criminologia e viagens pelo
+          mundo.</p>
+        <p class="texto">Ao retornar, ele escolhe o morcego – um símbolo que lhe causava medo – para ser sua      persona, transformando-o em uma criatura da noite para aterrorizar criminosos.
+          Ele vive como o playboy Bruce Wayne (diretor da Wayne Enterprises) e, à noite, como o
+          implacável Batman</p>
       </div>
-      
-      <div class="image">
+
+      <div class="imagem">
         <picture>
-          <source 
-          media="(max-width: 600px)"
-          srcset="images/batman-pequena.jpg"
-          type="image/jpg"
-          />
-          <img src="./images/batman.jpg" alt="Cartaz do Filme Batman" />
+        <source media="(max-width: 600px)" srcset="./images/batman-pequena.jpg">
+
+        <img src="./images/batman.jpg" alt="Imagem do Batman">
         </picture>
       </div>
+      
     </section>
   </main>
 </body>
+
 </html>
